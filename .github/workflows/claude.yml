@@ -13,10 +13,11 @@ on:
 jobs:
   claude:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      issues: write
+   permissions:
+          contents: write
+          pull-requests: write
+          issues: write
+          id-token: write   
     steps:
       - uses: anthropics/claude-code-action@beta
         with:
